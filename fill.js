@@ -1,7 +1,11 @@
-
-
 const url =  "https://exceed.superposition.pknn.dev/data/eight"
 
+setInterval(
+  get()
+  ,10000
+)
+
+
 
 $('#light-switch').ready(function(){
   $('input[type="checkbox"]').click(function(){
@@ -14,28 +18,32 @@ $('#light-switch').ready(function(){
   });
 });
 
-$('#light-switch').ready(function(){
+$('#door').ready(function(){
   $('input[type="checkbox"]').click(function(){
       if($(this).prop("checked") == true){
-        put('LED','on')
+        put('door','open')
       }
       else if($(this).prop("checked") == false){
-        put('LED','off')
+        put('door','close')
       }
   });
 });
 
-$('#light-switch').ready(function(){
+$('#buzzer').ready(function(){
   $('input[type="checkbox"]').click(function(){
       if($(this).prop("checked") == true){
-        put('LED','on')
+        put('buzzer','on')
       }
       else if($(this).prop("checked") == false){
-        put('LED','off')
+        put('buzzer','off')
       }
   });
 });
 
+
+function changeData () {
+  let a = get() 
+}
 
 
 
