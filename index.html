@@ -9,63 +9,74 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body style="background-image: url('bgjpg.jpg');">
-    
-   <div class="header">
+
+    <div class="header">
         <div class="navbar navbar-dark bg-dark shadow-sm">
-                <div class="container d-flex justify-content-between">
-                  <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
                     <strong>CPSK JAIL</strong>
-                  </a>
-                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </div>
-              <br>
-              <br>
-   </div>
-   
-   <div class="container">
+                </button>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div class="container">
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-                <div class="col-md-6 px-0">
-                  <h1 class="display-4 font-italic">Ceil Security</h1>
-                </div>
-       <div class="p-3 mb-2 bg-secondary text-white">
-           <div class="d-flex justify-content-end">
-               <h2>BUZZER</h2>
-                <div class="bigbold">off
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">Ceil Security</h1>
+            </div>
+            <div class="p-3 mb-2 bg-secondary text-white">
+                <div class="d-flex justify-content-end">
+                    <h2>BUZZER</h2>
+                    <div class="emptybox"></div>
+                    <div class="bigbold">off
                         <label class="switch">
                             <input id="buzzer" type="checkbox" checked>
-                            <span class="slider round" id="right-align"></span>                
+                            <span class="slider round" id="right-align"></span>
                         </label>
                         on
-                </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <h2>LED</h2>
-                    <div class="bigbold">off
-                            <label class="switch">
-                                <input id="light-switch" type="checkbox" checked>
-                                <span class="slider round" id="right-align"></span>                
-                            </label>
-                            on
                     </div>
                 </div>
-            <div class="d-flex justify-content-end">
-                <h2>DOOR</h2>
+                <div class="d-flex justify-content-between bd-highlight mb-3">
+                    <h2>LED</h2>
+                    <div class="bigbold">off
+                        <label class="switch">
+                            <input id="light-switch" type="checkbox" checked>
+                            <span class="slider round" id="right-align"></span>
+                        </label>
+                        on
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <h2>DOOR</h2>
+                    <div class="emptybox"></div>
                     <div class="bigbold">close
-                            <label class="switch">
-                                <input id="door" type="checkbox" checked>
-                                <span class="slider round" id="right-align"></span>                
-                            </label>
-                            open
+                        <label class="switch">
+                            <input id="door" type="checkbox" checked>
+                            <span class="slider round" id="right-align"></span>
+                        </label>
+                        open
                     </div>
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

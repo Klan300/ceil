@@ -89,3 +89,9 @@ h1 {
   .bg-color {
     background-color: bisque;
   }
+  .emptybox {
+    width: 45rem;
+  }
+  .emptybox_d {
+    width: 42.5rem;
+  }
