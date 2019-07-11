@@ -86,3 +86,6 @@ h1 {
     text-transform: uppercase;
     size: 25px;
   }
+  .bg-color {
+    background-color: bisque;
+  }
