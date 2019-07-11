@@ -2,7 +2,7 @@ const url =  "https://exceed.superposition.pknn.dev/data/eight"
 
 setInterval(
   get()
-  ,10000
+  ,3000
 )
 
 
@@ -41,10 +41,15 @@ $('#buzzer').ready(function(){
 });
 
 
-function changeData () {
-  let a = get() 
+function checkStatus(myJson) {
+  for (value in myJson) {
+    if (myJson[value] == "on") {
+      $(`#${value}`).attr("checked");
+    }else {
+      $(`#${value}`).removeAttr('checked')
+    }
+  }
 }
-
 
 
 
@@ -54,7 +59,7 @@ function  get() {
     return response.json();
   })
   .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
+    checkStatus(myJson);
   });
 }
 
