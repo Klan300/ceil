@@ -79,3 +79,10 @@ h1 {
     background: -moz-linear-gradient(top, #7579ff, #b224ef);
     background: linear-gradient(top, #7579ff, #b224ef);
   }
+  #right-align {
+    padding-left: 50px;
+  }
+  .bigbold {
+    text-transform: uppercase;
+    size: 25px;
+  }
